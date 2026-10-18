@@ -10,10 +10,10 @@ Get the latest APK from the **[Releases](../../releases/latest)** page.
 
 | Version | versionCode | File |
 |---|---|---|
-| 1.1.6 | 26 | `PaySplit-1.1.6-release.apk` (93.3 MB) |
+| 1.1.7 | 27 | `PaySplit-1.1.7-release.apk` (93.3 MB) |
 
 Direct link:
-`https://github.com/amitbrown21/PaySplit-Releases/releases/download/v1.1.6/PaySplit-1.1.6-release.apk`
+`https://github.com/amitbrown21/PaySplit-Releases/releases/download/v1.1.7/PaySplit-1.1.7-release.apk`
 
 ## Install
 
@@ -26,7 +26,7 @@ Direct link:
 **Over adb**
 
 ```bash
-adb install -r PaySplit-1.1.6-release.apk
+adb install -r PaySplit-1.1.7-release.apk
 ```
 
 ## About the build
@@ -39,7 +39,17 @@ adb install -r PaySplit-1.1.6-release.apk
   offline.
 - The Play Store build uses the same code; this APK is the sideload equivalent.
 
-## What's new in 1.1.6
+## What's new in 1.1.7
+
+- **Motion polish:** one motion system (160–300 ms, single ease-out curve),
+  spring press feedback on group cards, staggered row entrances, and a
+  fade/collapse when a group is deleted or left.
+- Screen pushes use a consistent slide, and everything respects the OS
+  "Remove animations" setting.
+- Includes 1.1.6 (swipe to delete/leave groups), 1.1.5 (balance fix) and
+  1.1.4 (release-build photo picker).
+
+### 1.1.6 highlights
 
 - **Swipe group rows** in the groups list: swipe left to reveal **Delete** (a
   group where you're the only member) or **Leave** (any shared group). Both ask
@@ -73,6 +83,7 @@ adb install -r PaySplit-1.1.6-release.apk
 
 | Version | versionCode | Notes |
 |---|---|---|
+| 1.1.6 | 26 | Swipe to delete/leave groups |
 | 1.1.5 | 25 | Group balances read all expenses (pagination fix) |
 | 1.1.4 | 24 | Photo picker fixed in release builds |
 | 1.1.3 | 23 | Superseded — photo picker broken in release builds |
