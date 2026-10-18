@@ -10,10 +10,10 @@ Get the latest APK from the **[Releases](../../releases/latest)** page.
 
 | Version | versionCode | File |
 |---|---|---|
-| 1.1.4 | 24 | `PaySplit-1.1.4-release.apk` (93.3 MB) |
+| 1.1.5 | 25 | `PaySplit-1.1.5-release.apk` (93.3 MB) |
 
 Direct link:
-`https://github.com/amitbrown21/PaySplit-Releases/releases/download/v1.1.4/PaySplit-1.1.4-release.apk`
+`https://github.com/amitbrown21/PaySplit-Releases/releases/download/v1.1.5/PaySplit-1.1.5-release.apk`
 
 ## Install
 
@@ -26,7 +26,7 @@ Direct link:
 **Over adb**
 
 ```bash
-adb install -r PaySplit-1.1.4-release.apk
+adb install -r PaySplit-1.1.5-release.apk
 ```
 
 ## About the build
@@ -39,7 +39,15 @@ adb install -r PaySplit-1.1.4-release.apk
   offline.
 - The Play Store build uses the same code; this APK is the sideload equivalent.
 
-## What's new in 1.1.4
+## What's new in 1.1.5
+
+- **Fixed:** group balances were calculated from only the first 50 expenses, so
+  groups with more history showed a much smaller amount inside the group than in
+  the groups list (e.g. 328 ILS vs 2,481 ILS). The group screen now reads every
+  expense in the group.
+- Includes the 1.1.4 photo-picker fix (group, profile and receipt photos).
+
+### 1.1.4 highlights
 
 - **Fixed:** the Android photo picker failed in release builds
   (`cannot be cast to ImagePickerOptions` / `NullPointerException`). Group
@@ -55,6 +63,7 @@ adb install -r PaySplit-1.1.4-release.apk
 
 | Version | versionCode | Notes |
 |---|---|---|
+| 1.1.4 | 24 | Photo picker fixed in release builds |
 | 1.1.3 | 23 | Superseded — photo picker broken in release builds |
 | 1.1.2 | 22 | Photo picker JS fix + hardening |
 | 1.1.1 | 21 | Group navigation fix |
